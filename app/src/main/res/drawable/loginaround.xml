@@ -5,15 +5,15 @@
         android:bottom="1dp"
         android:left="1dp"
         android:right="1dp"
-        android:top="-1dp">
+        android:top="1dp">
         <shape android:shape="rectangle" >
             <corners
-                android:radius="7dp"
+                android:radius="30dp"
                 ></corners>
 
             <stroke
                 android:width="3dp"
-                android:color="@color/white" />
+                android:color="#B0D8D7" />
 
             <solid android:color="#FFF" />
 
