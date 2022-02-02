@@ -24,8 +24,10 @@ class MainActivity : AppCompatActivity(){
         }
 
         search.setOnClickListener{
-            val intent = Intent(this, AfterRe::class.java)
-            startActivity(intent)
+            Intent(this, AfterRe::class.java).apply{
+                putExtra("afterdata",datas2)
+                startActivity(this)
+            }
         }
 
         if (actionBar != null) {

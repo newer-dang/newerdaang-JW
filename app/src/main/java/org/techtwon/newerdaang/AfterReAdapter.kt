@@ -6,12 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import org.techtwon.newerdaang.AfterData
+import org.techtwon.newerdaang.ItemData
 import org.techtwon.newerdaang.R
 
 class AfterReAdapter(private val context: Context) : RecyclerView.Adapter<AfterReAdapter.ViewHolder>() {
 
-    var datas = mutableListOf<AfterData>()
+    var datas = ArrayList<ItemData>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.after_s,parent,false)
         return ViewHolder(view)
@@ -29,7 +29,7 @@ class AfterReAdapter(private val context: Context) : RecyclerView.Adapter<AfterR
         private val wme: TextView = itemView.findViewById(R.id.wme)
 
 
-        fun bind(item: AfterData) {
+        fun bind(item: ItemData) {
             wna.text = item.name
             wme.text = item.mean
 

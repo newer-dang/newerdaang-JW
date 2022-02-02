@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginBottom="20dp"
+
         android:background="#D7EBEA">
 
         <ImageButton
@@ -43,6 +46,44 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/after_search"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@drawable/recy"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constrainedHeight="true"
+        tools:listitem="@layout/after_s"/>
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:background="#D7EBEA"
+        android:id="@+id/sca"
+        android:layout_width="410dp"
+        android:layout_height="800dp"
+        app:scale_base_height="1450"
+        app:scale_base_width="900"
+        app:scale_top="500">
+
+        <TextView
+            android:id="@+id/no_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:visibility="gone"
+            app:scale_height="100"
+            app:scale_width="800"
+            app:scale_top="30"
+            app:scale_textsize="40"
+            android:text="~~~~~에 대한 정보가 없습니다" />
+
+        <ImageView
+            android:id="@+id/birdI"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:scale_height="500"
+            app:scale_width="500"
+            app:srcCompat="@drawable/bird" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
 
 </LinearLayout>
