@@ -18,6 +18,16 @@ class MainActivity : AppCompatActivity(){
         setContentView(R.layout.activity_main)
         initRecycler()
         val actionBar = supportActionBar
+
+        clearB.setOnClickListener{
+            searchBar.setText(null)
+        }
+
+        search.setOnClickListener{
+            val intent = Intent(this, AfterRe::class.java)
+            startActivity(intent)
+        }
+
         if (actionBar != null) {
             actionBar.hide()
         }
@@ -30,10 +40,12 @@ class MainActivity : AppCompatActivity(){
                 var searchT: String = p0.toString()
                 if(searchT.length == 0)
                 {
+                    clearB.setVisibility(View.GONE)
                     wordRe.setVisibility(View.GONE)
                     recent.setVisibility(View.VISIBLE)
                 }
                 else {
+                    clearB.setVisibility(View.VISIBLE)
                     wordRe.setVisibility(View.VISIBLE)
                     recent.setVisibility(View.GONE)
                 }
@@ -101,5 +113,7 @@ class MainActivity : AppCompatActivity(){
         val intent = Intent()
         finish()
     }
+
+
 
 }

@@ -16,7 +16,7 @@
         android:background="#D7EBEA">
 
         <ImageButton
-            android:id="@+id/bird_icon"
+            android:id="@+id/back_icon"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/back_"
@@ -51,14 +51,34 @@
             tools:ignore="MissingPrefix" />
 
         <ImageButton
-            android:id="@+id/button"
+            android:id="@+id/clearB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cross_icon"
+            android:backgroundTint="#d3d3d3"
+            app:scale_height="50"
+            app:scale_left="600"
+            app:scale_top="35"
+            app:scale_width="50" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.3dp"
+            app:scale_height="60"
+            app:scale_width="5"
+            app:scale_top="30"
+            app:scale_left="657"
+            android:background="#d3d3d3" />
+
+
+        <ImageButton
+            android:id="@+id/search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/search_icon1"
             android:text="Button"
-            app:scale_height="90"
-            app:scale_left="660"
-            app:scale_top="20"
+            app:scale_height="80"
+            app:scale_left="670"
+            app:scale_top="25"
             app:scale_width="80" />
 
     </com.ssomai.android.scalablelayout.ScalableLayout>
