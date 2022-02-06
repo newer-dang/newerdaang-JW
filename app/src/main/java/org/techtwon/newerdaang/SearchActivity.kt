@@ -7,7 +7,7 @@ import android.text.TextWatcher
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.search_activity.*
 
 class MainActivity : AppCompatActivity(){
     lateinit var wordAdapter: WordAdapter
@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.`search_activity.xml`)
         initRecycler()
         val actionBar = supportActionBar
 
@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity(){
         search.setOnClickListener{
             Intent(this, AfterRe::class.java).apply{
                 putExtra("afterdata",datas2)
+                putExtra("search",searchBar.text.toString())
                 startActivity(this)
             }
         }

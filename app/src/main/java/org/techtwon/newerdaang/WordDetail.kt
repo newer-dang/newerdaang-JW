@@ -20,6 +20,7 @@ class WordDetail : AppCompatActivity() {
 
         wname = intent.getSerializableExtra("name").toString()
         wmean = intent.getSerializableExtra("mean").toString()
+        textView3.text = wname
         wn.text = wname
         wm.text = wmean
 

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Newadang">
         <activity
-            android:name="org.techtwon.newerdaang.MainActivity"
+            android:name="org.techtwon.newerdaang.SearchActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

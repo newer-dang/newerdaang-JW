@@ -11,30 +11,18 @@
         android:layout_height="wrap_content"
         app:scale_base_height="1417"
         app:scale_base_width="800">
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="245dp"
-            app:srcCompat="@drawable/bird"
+            android:layout_height="182dp"
             android:background="#B0D8D7"
-            app:scale_height="450"
-            app:scale_width="800"/>
+            app:scale_height="650"
+            app:scale_width="800"
+            app:srcCompat="@drawable/bird" />
 
         <EditText
-            android:id="@+id/nickname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/loginaround"
-            android:hint="닉네임"
-            android:paddingStart="20dp"
-            app:scale_textsize="40"
-            app:scale_top="500"
-            app:scale_left="45"
-            app:scale_height="100"
-            app:scale_width="700"/>
-
-        <EditText
-            android:id="@+id/email"
+            android:id="@+id/email_l"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -42,13 +30,13 @@
             android:hint="abcdefg@mail.com"
             android:paddingStart="20dp"
             app:scale_textsize="40"
-            app:scale_top="650"
+            app:scale_top="750"
             app:scale_left="45"
             app:scale_height="100"
             app:scale_width="700"/>
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/password_l"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -56,30 +44,16 @@
             android:hint="비밀번호"
             android:paddingStart="20dp"
             app:scale_textsize="40"
-            app:scale_top="800"
-            app:scale_left="45"
-            app:scale_height="100"
-            app:scale_width="700"/>
-
-        <EditText
-            android:id="@+id/password2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:background="@drawable/loginaround"
-            android:hint="비밀번호 재입력"
-            android:paddingStart="20dp"
-            app:scale_textsize="40"
-            app:scale_top="950"
+            app:scale_top="920"
             app:scale_left="45"
             app:scale_height="100"
             app:scale_width="700"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/login_b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CONTINUE"
+            android:text="LOGIN"
             android:textColor="@color/white"
             android:background="@drawable/loginaround"
             android:backgroundTint="#B0D8D7"
@@ -89,29 +63,6 @@
             app:scale_height="100"
             app:scale_width="700"/>
 
-        <TextView
-            android:id="@+id/Aleady"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Already have an account?"
-            app:scale_top="1240"
-            app:scale_left="45"
-            app:scale_height="50"
-            app:scale_width="700"
-            app:scale_textsize="23"
-            android:textAlignment="center"/>
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LOGIN"
-            android:background="#D7EBEA"
-            app:scale_top="1319"
-            app:scale_height="100"
-            app:scale_width="800"
-            app:scale_textsize="23"
-            android:textAlignment="center"/>
     </com.ssomai.android.scalablelayout.ScalableLayout>
 
 </LinearLayout>

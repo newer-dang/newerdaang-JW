@@ -11,10 +11,17 @@ class AfterRe : AppCompatActivity() {
     lateinit var reAdapter: AfterReAdapter
     var datas = ArrayList<ItemData>()
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        val actionBar = supportActionBar
+        if (actionBar != null) {
+            actionBar.hide()
+        }
         super.onCreate(savedInstanceState)
         setContentView(R.layout.after)
-
+        var st = intent.getStringExtra("search")
+        textView3.text = intent.getStringExtra("search")
+        no_search.text = ("\"$st\"" +" 에 대한 결과가 없습니다.")
         initRecycler()
     }
 
